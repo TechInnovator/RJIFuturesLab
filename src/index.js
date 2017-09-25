@@ -21,9 +21,9 @@ const STOP_MESSAGE = 'Goodbye!';
 
 var handlers = {
     'LaunchRequest': function () {
-        //this.emit('PlayVideoIntent');
-        this.response.speak(WELCOME_MESSAGE);
-        this.emit(':responseReady');
+        this.emit('PlayVideoIntent');
+        //this.response.speak(WELCOME_MESSAGE);
+        //this.emit(':responseReady');
     },
     'PlayVideoIntent' : function() {
 
